@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <div class="timer">
+      <div id="timer-input">
+        <input type="number" id="hours" placeholder="HH" min="0" max="24" step="1">
+        <input type="number" id="minutes" placeholder="MM" min="0" max="59" step="1">
+        <input type="number" id="seconds" placeholder="SS" min="0" max="59" step="1">
+      </div>
+      <span id="timer-display">00:00:00</span>
+      <div class="timer-buttons">
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+        <button id="reset-button">Reset</button>
+      </div>
+      <div id="timer-end-message" class="hidden">
+        <p id="end-message"></p>
+        <button id="alert-ok-button" class="hidden">OK</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
